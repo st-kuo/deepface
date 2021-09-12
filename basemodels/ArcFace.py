@@ -25,7 +25,7 @@ def loadModel(url = 'https://github.com/serengil/deepface_models/releases/downlo
 	embedding = keras.layers.BatchNormalization(momentum=0.9, epsilon=2e-5, name="embedding", scale=True)(arcface_model)
 	model = keras.models.Model(inputs, embedding, name=base_model.name)
 
-	#---------------------------------------
+	#---------------------------------------st
 	#check the availability of pre-trained weights
 
 	home = functions.get_deepface_home()
