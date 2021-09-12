@@ -32,11 +32,13 @@ def loadModel(url = 'https://github.com/serengil/deepface_models/releases/downlo
 
 	file_name = "arcface_weights.h5"
 	output = home+'/.deepface/weights/'+file_name
+	
+	output = "/content/deepface/models/arcface_weights.h5"
 
-	if os.path.isfile(output) != True:
+#	if os.path.isfile(output) != True:
 
-		print(file_name," will be downloaded to ",output)
-		gdown.download(url, output, quiet=False)
+#		print(file_name," will be downloaded to ",output)
+#		gdown.download(url, output, quiet=False)
 
 	#---------------------------------------
 	
